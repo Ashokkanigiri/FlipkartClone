@@ -14,5 +14,21 @@
         <!-- Customize your theme here. -->
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/app_splash_icon</item>
         <item name="android:windowSplashScreenBackground">@color/app_primary</item>
+        <item name="bottomNavigationStyle">@style/BottomNavigationViewStyle</item>
+
+    </style>
+
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconTint">@color/bottom_nav_bar_color_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_bar_color_selector</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>

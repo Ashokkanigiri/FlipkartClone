@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FlipkartClone</string>
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="notifications">Notifications</string>
+    <string name="account">Account</string>
+    <string name="cart">Cart</string>
 </resources>
