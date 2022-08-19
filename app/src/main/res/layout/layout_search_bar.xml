@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_primary">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flipkart"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@color/app_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="Search for products"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_app_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_baseline_mic_24"
+        app:layout_constraintBottom_toBottomOf="@id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        app:layout_constraintEnd_toStartOf="@id/iv_mic"
+        app:layout_constraintBottom_toBottomOf="@id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.625" />
+</androidx.constraintlayout.widget.ConstraintLayout>
